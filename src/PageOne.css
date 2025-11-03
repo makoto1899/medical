@@ -1,0 +1,359 @@
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.page-one {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.page-content {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.page-content h1 {
+  color: #667eea;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+.page-content p {
+  color: #555;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.time-input-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 30px;
+  border-radius: 15px;
+  margin: 30px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.time-input-section h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.time-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.quick-time-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 100px;
+}
+
+.quick-button {
+  background-color: white;
+  color: #667eea;
+  border: 2px solid white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 0.95em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
+
+.quick-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background-color: #f8f9fa;
+}
+
+.quick-button:active {
+  transform: translateY(0);
+  background-color: #667eea;
+  color: white;
+}
+
+.form-group label {
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.time-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #667eea;
+  text-align: center;
+  padding: 10px;
+  background-color: transparent;
+}
+
+.time-input::placeholder {
+  color: #ccc;
+}
+
+.input-unit {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #667eea;
+  min-width: 30px;
+}
+
+.submit-button {
+  background-color: white;
+  color: #667eea;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  background-color: #f8f9fa;
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+.duration-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.duration-button {
+  background-color: white;
+  color: #667eea;
+  border: 2px solid white;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  min-width: 80px;
+}
+
+.duration-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  background-color: #f8f9fa;
+}
+
+.duration-button:active {
+  transform: translateY(0);
+  background-color: #667eea;
+  color: white;
+}
+
+.calculated-results {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.calculated-results h3 {
+  color: #667eea;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.result-item:last-child {
+  margin-bottom: 0;
+}
+
+.result-label {
+  color: #667eea;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.result-time {
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.time-display-result {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.time-display-result strong {
+  font-size: 1.3em;
+  color: #fff;
+}
+
+/* Chrome, Safari, Edge, Opera - 数字の上下矢印を非表示 */
+.time-input::-webkit-outer-spin-button,
+.time-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox - 数字の上下矢印を非表示 */
+.time-input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.info-box {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 15px;
+  margin: 30px 0;
+  text-align: left;
+}
+
+.info-box h2 {
+  color: #667eea;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+}
+
+.info-box p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.info-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-box ul li {
+  padding: 10px 0;
+  color: #444;
+  border-bottom: 1px solid #ddd;
+}
+
+.info-box ul li:last-child {
+  border-bottom: none;
+}
+
+.info-box ul li:before {
+  content: "✓ ";
+  color: #667eea;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 15px 40px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 20px;
+}
+
+.back-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    padding: 30px 20px;
+  }
+
+  .page-content h1 {
+    font-size: 2em;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .quick-time-buttons {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .quick-button {
+    flex: 1;
+  }
+
+  .duration-buttons {
+    flex-direction: column;
+  }
+
+  .duration-button {
+    width: 100%;
+    min-width: unset;
+  }
+}
+

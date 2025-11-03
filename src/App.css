@@ -1,0 +1,142 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+}
+
+.App-header h1 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+.time-display {
+  margin: 30px 0;
+  padding: 20px 40px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.current-time {
+  font-size: 3em;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.current-date {
+  font-size: 1.2em;
+  color: #e0e0e0;
+  font-weight: 300;
+}
+
+.navigation-buttons {
+  display: flex;
+  gap: 30px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 40px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 200px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button-one {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.button-two {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.nav-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.button-icon {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.button-text {
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.feature {
+  background-color: #3a3f4b;
+  padding: 30px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.feature p {
+  font-size: 0.9em;
+  line-height: 1.6;
+  color: #b8bcc8;
+}
+
+@media (max-width: 768px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .App-header h1 {
+    font-size: 2em;
+  }
+
+  .navigation-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-button {
+    min-width: 250px;
+    width: 100%;
+  }
+}
+
